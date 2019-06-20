@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/Scenes/TestSave.unity
+  isLoaded: 1
+  isActive: 1
