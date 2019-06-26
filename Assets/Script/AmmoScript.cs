@@ -22,6 +22,8 @@ public class AmmoScript : MonoBehaviour {
                 Game_Controller.numBulletPlus--;
             else if (this.name == "Potion_Health(Clone)")
                 Game_Controller.numHealth--;
+            else if (this.name == "GrenadePlus(Clone)")
+                Game_Controller.numGrenadePlus--;
             Destroy(this.gameObject);
         }
             
@@ -29,25 +31,47 @@ public class AmmoScript : MonoBehaviour {
     }
     void OnTriggerEnter(Collider Other)
     {
-        if(Other.tag == "Weapon")
+        if (Other.tag == "Weapon")
         {
-            if(this.name == "Ammo(Clone)")
+            //if (this.name == "Ammo(Clone)")
+            //{
+            //    Game_Controller.Bullet += 100;
+            //    Game_Controller.numBulletPlus--;
+            //}
+
+             if (this.name == "Potion_Health(Clone)")
             {
-                Game_Controller.Bullet += 100;
-                Game_Controller.numBulletPlus--;
-            }
-            
-            else if(this.name == "Potion_Health(Clone)")
-            {
-                if(game_Controller.GetComponent<Game_Controller>().Health.transform.localPosition.x < 0)
+                if (game_Controller.GetComponent<Game_Controller>().Health.transform.localPosition.x < 0)
                 {
-                    Debug.Log("Cong Mau");
                     game_Controller.GetComponent<Game_Controller>().Health.transform.position += new Vector3(30, 0, 0);
                 }
-                
+
                 Game_Controller.numHealth--;
             }
-            
+
+            else if (this.name == "GrenadePlus(Clone)")
+            {
+                
+                Game_Controller.numGrenade += 1;
+                Game_Controller.numGrenadePlus--;
+            }
+
+            else if (this.name == "clock(Clone)")
+            {
+                Debug.Log("IceTime");
+                Time.timeScale = 0.0001f;
+                Game_Controller.numTimeIce--;
+            }
+            else if(this.name == "ShotgunPlus(Clone)")
+            {
+                Game_Controller.bulletShotGun += 30;
+                Game_Controller.numBulletPlus--;
+            }
+             else if(this.name == "UMP40Plus(Clone)")
+            {
+                Game_Controller.bulletUMP40 += 30;
+                Game_Controller.numBulletPlus--;
+            }
             Destroy(this.gameObject);
 
         }

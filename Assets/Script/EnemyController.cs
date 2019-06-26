@@ -62,6 +62,8 @@ public class EnemyController : MonoBehaviour
         {
             Game_Controller.CanvasMatMau.SetActive(true);
             game_Controller.GetComponent<Game_Controller>().Health.transform.position -= new Vector3(powerEnemy, 0, 0);
+            Destroy(this.gameObject, 3);
+            Game_Controller.numEnemy--;
         }
     }
 

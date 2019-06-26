@@ -33,10 +33,10 @@ public class NewVirtualJoyStick : MonoBehaviour, IDragHandler, IPointerUpHandler
 
     public virtual void OnDrag(PointerEventData ped)
     {
-        Debug.Log("Ped Position: " + ped.position);
-        Debug.Log("btImg.rectTransform: " + bgImg.rectTransform);
-        Debug.Log("ped pressEvent Cam: " + ped.pressEventCamera);
-        Debug.Log("joystickImg: " + joystickImg.rectTransform.position);
+        //Debug.Log("Ped Position: " + ped.position);
+        //Debug.Log("btImg.rectTransform: " + bgImg.rectTransform);
+        //Debug.Log("ped pressEvent Cam: " + ped.pressEventCamera);
+        //Debug.Log("joystickImg: " + joystickImg.rectTransform.position);
         Vector2 pos;
         if (RectTransformUtility.ScreenPointToLocalPointInRectangle(bgImg.rectTransform, ped.position, ped.pressEventCamera, out pos ))
         {

@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{D662B9B6-DDAF-F196-7CF2-DEA0ED825379}</ProjectGuid>
+    <ProjectGuid>{6CC92EE2-C97E-2137-C111-F092707B90B5}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -55,24 +55,25 @@
   <ItemGroup>
      <Compile Include="Assets\Animation\Fighter Pack Bundle FREE\Code\CameraControl.cs" />
      <Compile Include="Assets\Animation\Fighter Pack Bundle FREE\Code\FighterAnimationDemoFREE.cs" />
-     <Compile Include="Assets\DualCorStudios\BasicUI Metal\Standard Assets\CrossPlatformInput\Scripts\AxisTouchButton.cs" />
-     <Compile Include="Assets\DualCorStudios\BasicUI Metal\Standard Assets\CrossPlatformInput\Scripts\ButtonHandler.cs" />
-     <Compile Include="Assets\DualCorStudios\BasicUI Metal\Standard Assets\CrossPlatformInput\Scripts\CrossPlatformInputManager.cs" />
-     <Compile Include="Assets\DualCorStudios\BasicUI Metal\Standard Assets\CrossPlatformInput\Scripts\InputAxisScrollbar.cs" />
-     <Compile Include="Assets\DualCorStudios\BasicUI Metal\Standard Assets\CrossPlatformInput\Scripts\Joystick.cs" />
-     <Compile Include="Assets\DualCorStudios\BasicUI Metal\Standard Assets\CrossPlatformInput\Scripts\MobileControlRig.cs" />
-     <Compile Include="Assets\DualCorStudios\BasicUI Metal\Standard Assets\CrossPlatformInput\Scripts\PlatformSpecific\MobileInput.cs" />
-     <Compile Include="Assets\DualCorStudios\BasicUI Metal\Standard Assets\CrossPlatformInput\Scripts\PlatformSpecific\StandaloneInput.cs" />
-     <Compile Include="Assets\DualCorStudios\BasicUI Metal\Standard Assets\CrossPlatformInput\Scripts\TiltInput.cs" />
-     <Compile Include="Assets\DualCorStudios\BasicUI Metal\Standard Assets\CrossPlatformInput\Scripts\TouchPad.cs" />
-     <Compile Include="Assets\DualCorStudios\BasicUI Metal\Standard Assets\CrossPlatformInput\Scripts\VirtualInput.cs" />
+     <Compile Include="Assets\Effect\Fx Explosion Pack\Script\csDemoScenceControl.cs" />
+     <Compile Include="Assets\Effect\Fx Explosion Pack\Script\csLightControl.cs" />
+     <Compile Include="Assets\Effect\Fx Explosion Pack\Script\csMouseOrbit.cs" />
+     <Compile Include="Assets\Effect\Fx Explosion Pack\Script\DestroyEffect.cs" />
+     <Compile Include="Assets\EnergyController.cs" />
+     <Compile Include="Assets\Items\Clock\Scripts\Clock.cs" />
      <Compile Include="Assets\Scenes\LoginScript.cs" />
+     <Compile Include="Assets\Scenes\ShopController.cs" />
      <Compile Include="Assets\Scenes\TestCam.cs" />
      <Compile Include="Assets\Scenes\TestPlayerPref.cs" />
      <Compile Include="Assets\Script\AmmoScript.cs" />
+     <Compile Include="Assets\Script\BossScript.cs" />
+     <Compile Include="Assets\Script\BtnGrenade.cs" />
      <Compile Include="Assets\Script\BulletController.cs" />
      <Compile Include="Assets\Script\EnemyController.cs" />
+     <Compile Include="Assets\Script\FireController.cs" />
      <Compile Include="Assets\Script\Game_Controller.cs" />
+     <Compile Include="Assets\Script\GrenadeController.cs" />
+     <Compile Include="Assets\Script\GrenadeScript.cs" />
      <Compile Include="Assets\Script\GunController.cs" />
      <Compile Include="Assets\Script\NewVirtualJoyStick.cs" />
      <Compile Include="Assets\Script\PlayerController.cs" />
@@ -80,6 +81,17 @@
      <Compile Include="Assets\Script\ScriptUIScene2\ControllerScene.cs" />
      <Compile Include="Assets\Script\TestSave.cs" />
      <Compile Include="Assets\Script\UIController.cs" />
+     <Compile Include="Assets\UI\DualCorStudios\BasicUI Metal\Standard Assets\CrossPlatformInput\Scripts\AxisTouchButton.cs" />
+     <Compile Include="Assets\UI\DualCorStudios\BasicUI Metal\Standard Assets\CrossPlatformInput\Scripts\ButtonHandler.cs" />
+     <Compile Include="Assets\UI\DualCorStudios\BasicUI Metal\Standard Assets\CrossPlatformInput\Scripts\CrossPlatformInputManager.cs" />
+     <Compile Include="Assets\UI\DualCorStudios\BasicUI Metal\Standard Assets\CrossPlatformInput\Scripts\InputAxisScrollbar.cs" />
+     <Compile Include="Assets\UI\DualCorStudios\BasicUI Metal\Standard Assets\CrossPlatformInput\Scripts\Joystick.cs" />
+     <Compile Include="Assets\UI\DualCorStudios\BasicUI Metal\Standard Assets\CrossPlatformInput\Scripts\MobileControlRig.cs" />
+     <Compile Include="Assets\UI\DualCorStudios\BasicUI Metal\Standard Assets\CrossPlatformInput\Scripts\PlatformSpecific\MobileInput.cs" />
+     <Compile Include="Assets\UI\DualCorStudios\BasicUI Metal\Standard Assets\CrossPlatformInput\Scripts\PlatformSpecific\StandaloneInput.cs" />
+     <Compile Include="Assets\UI\DualCorStudios\BasicUI Metal\Standard Assets\CrossPlatformInput\Scripts\TiltInput.cs" />
+     <Compile Include="Assets\UI\DualCorStudios\BasicUI Metal\Standard Assets\CrossPlatformInput\Scripts\TouchPad.cs" />
+     <Compile Include="Assets\UI\DualCorStudios\BasicUI Metal\Standard Assets\CrossPlatformInput\Scripts\VirtualInput.cs" />
      <Compile Include="Assets\UJoystick\Content\Script\Core\bl_Joystick.cs" />
      <Compile Include="Assets\UJoystick\Content\Script\Internal\bl_JoystickUtils.cs" />
      <Compile Include="Assets\UJoystick\Example\Scrips\bl_ControllerExample.cs" />
@@ -91,22 +103,23 @@
      <Compile Include="Assets\Weapon\Easy FPS\Scripts\PlayerMovementScript.cs" />
      <None Include="Assets\UJoystick\ReadMe.txt" />
      <None Include="Assets\Character\RainEntertainment\FantasyMonster2\Fallen Angle Pack\readMe.txt" />
-     <None Include="Assets\DualCorStudios\BasicUI Metal\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
-     <None Include="Assets\DualCorStudios\Readme.txt" />
+     <None Include="Assets\UI\DualCorStudios\BasicUI Metal\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
+     <None Include="Assets\Character\RainEntertainment\FantasyMonster4\Demon Blade Lord\readMe.txt" />
+     <None Include="Assets\UI\DualCorStudios\Readme.txt" />
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>E:/Unity/Run/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>E:/Unity/Run/FPS/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.PackageManagerUI.Editor">
- <HintPath>E:/Unity/Run/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+ <HintPath>E:/Unity/Run/FPS/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.CollabProxy.Editor">
- <HintPath>E:/Unity/Run/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+ <HintPath>E:/Unity/Run/FPS/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>E:/Unity/Run/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>E:/Unity/Run/FPS/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.DataPrivacy">
- <HintPath>E:/Unity/Run/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+ <HintPath>E:/Unity/Run/FPS/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>E:/Unity2018/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -307,13 +320,13 @@
  <HintPath>E:/Unity2018/Unity/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.Editor">
- <HintPath>E:/Unity/Run/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
+ <HintPath>E:/Unity/Run/FPS/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.StandardEvents">
- <HintPath>E:/Unity/Run/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
+ <HintPath>E:/Unity/Run/FPS/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.Tracker">
- <HintPath>E:/Unity/Run/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
+ <HintPath>E:/Unity/Run/FPS/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
  </Reference>
  <Reference Include="mscorlib">
  <HintPath>E:/Unity2018/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unity/mscorlib.dll</HintPath>

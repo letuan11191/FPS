@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class BulletController : MonoBehaviour
 {
-
+    public GameObject gameController;
     // Use this for initialization
     void Start()
     {
-
+        gameController = GameObject.Find("Game_Controller");
     }
 
     // Update is called once per frame
@@ -22,6 +22,16 @@ public class BulletController : MonoBehaviour
         {
             Other.gameObject.GetComponent<EnemyController>().BloodEnemy--;
             Other.gameObject.GetComponent<EnemyController>().run = false;
+        }
+        if(Other.tag == "Boss")
+        {
+            gameController.GetComponent<Game_Controller>().BossHealth.transform.position -= new Vector3(3, 0, 0);
+            Game_Controller.Score += 50;
+        }
+        if(Other.tag == "Energy")
+        {
+            Destroy(Other.gameObject);
+            BossScript.numEnergyBall--;
         }
         Destroy(this);
     }

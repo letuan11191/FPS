@@ -71,7 +71,7 @@ public class PlayerController : MonoBehaviour {
         getHorizontal += VirtualJoyStick.Horizontal();
         getVertical -= VirtualJoyStick.Vertical();
         getVertical = Mathf.Clamp(getVertical, -45f, 45f);
-        getHorizontal = Mathf.Clamp(getHorizontal, -80f, 80f);
+        getHorizontal = Mathf.Clamp(getHorizontal, -45f, 45f);
         Cam.transform.localEulerAngles = new Vector3(getVertical, getHorizontal, 0) * sR * Time.deltaTime;
         ///////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -117,4 +117,11 @@ public class PlayerController : MonoBehaviour {
         }
 
     }
+
+    void OnTriggerEnter(Collider Other)
+    {
+
+    }
 }
+
+

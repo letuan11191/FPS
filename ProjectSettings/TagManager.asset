@@ -12,6 +12,8 @@ TagManager:
   - Ground
   - Enemy
   - Head
+  - Energy
+  - Boss
   layers:
   - Default
   - TransparentFX
